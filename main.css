@@ -1,0 +1,752 @@
+/*-----globale styles-----*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html {
+    font-family: Raleway, sans-serif;
+}
+body {
+    height: 100%;
+
+}
+
+
+
+/* image styles */
+
+#logo {
+    padding-left: 2em;
+    width: 10em;
+}
+
+#astro {
+    width: 13%;
+    position: fixed;
+    z-index: -1;
+    right: 8em;
+    bottom: 1em;
+}
+#foreground {
+    width: 58%;
+    position: fixed;
+    z-index: -2;
+    right: 0;
+    bottom: 0em;
+}
+#background {
+    width: 83%;
+    max-width: 1600px;
+    max-height: 1565px;
+    position: fixed;
+    z-index: -3;
+    right: -28em;
+    bottom: -45em;
+
+}
+img#background-alt {
+display: none;
+}
+
+#insta {
+    float: right;
+    padding-bottom: 1em;
+    color: white;
+    width:2rem;
+    z-index: 3;
+}
+
+img#menu {
+    display: inline-block;
+    height: 4em;
+}
+
+
+
+/* start other styles */
+
+header{
+    width: 100%;
+}
+nav {
+    margin: 3%;
+}
+
+#nav-links {
+    float: right;
+    list-style-type: none;
+    margin-right: 1%;
+    padding-top: .3%;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #4C1F57;
+    font-family: 'Questrial', sans-serif;
+
+}
+ul li a:hover {
+    opacity: .5;
+}
+
+ul li a:visited {
+    color: #BD4A68;
+}
+
+a#index {
+    padding-right: 2em;
+    /* border-right: solid #4C1F57; */
+ }
+
+section#maincontent {
+    width: 30em;
+    margin-left: 8%;
+    margin-top: 6%;
+}
+
+
+
+a#hash-tag-style{
+    color:  #4C1F57;
+    text-decoration: none;
+}
+
+#hash-tag-style:hover{
+    opacity: .5;
+}
+
+h1 {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    display: block;
+    font-size: 1.2em;
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+h2#promptTxt {
+    height: 4em;
+    margin-top: 1.5em;
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+.btnOutline {
+    display: block;
+    text-decoration: none;
+    background: none;
+    border: 1px solid #AC4167;
+    color: #AC4167;
+    border-radius: 45px 0 45px 0;
+    width: 7em;
+    height: 2.8em;
+    text-align: center;
+    margin-top: 14px;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btnOutline:hover {
+    background-color:  #AC4167;
+    color: white;
+
+}
+
+#resetbtn {
+    margin-top: 7%;
+    margin-left:35%;
+    margin-right: 50%;
+    display: none;
+    cursor:pointer; 
+}
+
+div#mainbtn {
+    margin-top: 7%;
+    margin-left: 35%;
+    margin-right: 50%;
+}
+
+label {
+    margin: 0px 5em 0 0;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    top: -54px;
+
+}
+
+/* start 30 day styling */
+
+#thirty-day-header {
+    font-size: 2.5em;
+    text-align: left;
+}
+
+
+
+#thirty-day-content{
+    width: 30em;
+    margin-left: 8%;
+    margin-top: 6%;
+    
+}
+
+p#thirty-day-call {
+    font-size: 1.4em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+ol {
+    font-size: 1.2em;
+    line-height: 2em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+    width: 14em;
+}
+
+
+footer{
+width: 100%;
+position: fixed;
+z-index: 2;
+bottom: 0;
+}
+
+.hidden 
+{position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
+
+
+
+
+
+
+/* Start media queries */
+
+@media screen and (max-width: 1024px) {
+
+    
+#astro {
+    width: 20%;
+    position: fixed;
+    z-index: -1;
+    right: 2em;
+    bottom: 2em;
+}
+#foreground {
+    width: 99%;
+    position: fixed;
+    z-index: -2;
+    right: 0;
+    bottom: 0em;
+}
+#background {
+    width: 0;
+    position: fixed;
+    z-index: -3;
+    right: -28em;
+    bottom: -45em;
+}
+
+img#background-alt {
+    display: block;
+    width: 164%;
+    height: 77%;
+    position: fixed;
+    z-index: -4;
+    right: -21em;
+    bottom: -1em;
+}
+
+#insta {
+    float: right;
+    padding-right: 1em;
+    padding-bottom: .8em;
+    color: white;
+    width:2rem;
+    z-index: 3;
+}
+
+img#menu {
+    display: inline-block;
+    height: 4em;
+}
+
+
+
+/* start other styles */
+
+#nav-links {
+    float: right;
+    list-style-type: none;
+    margin-right: 2%;
+    padding-top: .3%;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+a#index {
+    padding-right: 1em;
+}
+
+section#maincontent {
+    width: 85%;
+    margin-left: 6.5%;
+    margin-right: 18.5%;
+    margin-top: 8%;
+}
+
+h1 {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    display: block;
+    font-size: 1.7em;
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+h2#promptTxt {
+    height: 4em;
+    margin-top: 1.5em;
+    font-size: 1.7em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.btnOutline {
+    display: inline;
+    text-decoration: none;
+    background: none;
+    border: 1px solid #AC4167;
+    color: #AC4167;
+    border-radius: 45px 0 45px 0;
+    text-align: center;
+    margin-right: 1em;
+    font-size: 1.5em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+div#mainbtn {
+    width: 100%;
+    margin-top: -1%;
+    margin-left: 0%;
+    margin-right: 0;
+}
+
+button#easybtn {
+    margin-left: 6em;
+}
+
+#resetbtn {
+    width: 100%;
+    margin-left: 0;
+    margin-top: -1%;
+}
+/* start 30 day styling */
+
+#thirty-day-header {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+
+#thirty-day-content {
+    width: 63%;
+    margin-left: 18.5%;
+    margin-right: 18.5%;
+    margin-top: 12%;
+    height: 75vh;
+    overflow: scroll;
+}
+
+p#thirty-day-call {
+    font-size: 1.7em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    z-index: -5;
+}
+
+ol {
+    font-size: 1.5em;
+    line-height: 2em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    padding-left: 34%;
+    padding-right: 39%;
+    width: 14em;
+}
+
+
+footer{
+width: 100%;
+position: fixed;
+z-index: 2;
+bottom: 0;
+}
+
+.hidden 
+{position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
+  }
+
+
+ 
+@media screen and (max-width: 780px) {
+    /* image styles */
+
+
+#astro {
+    width: 20%;
+    position: fixed;
+    z-index: -1;
+    right: 2em;
+    bottom: 2em;
+}
+#foreground {
+    width: 99%;
+    position: fixed;
+    z-index: -2;
+    right: 0;
+    bottom: 0em;
+}
+#background {
+    width: 0;
+    position: fixed;
+    z-index: -3;
+    right: -28em;
+    bottom: -45em;
+}
+
+img#background-alt {
+    display: block;
+    width: 164%;
+    height: 77%;
+    position: fixed;
+    z-index: -4;
+    right: -21em;
+    bottom: -1em;
+}
+
+img#background-alt {
+    display: block;
+    width: 164%;
+    height: 84%;
+    position: fixed;
+    z-index: -4;
+    right: -17em;
+    bottom: 0em;
+}
+
+img#menu {
+    display: inline-block;
+    height: 4em;
+}
+
+
+
+/* start other styles */
+
+
+section#maincontent {
+    width: 30em;
+    margin-left: 20%;
+    margin-top: 12%;
+}
+
+div#mainbtn {
+    width: 100%;
+    margin-top: 4%;
+    margin-left: 0%;
+    margin-right: 0;
+}
+
+#resetbtn {
+    width: 100%;
+    margin-left: 0;
+    margin-top: -1%;
+}
+
+.btnOutline {
+    display: inline;
+    text-decoration: none;
+    background: none;
+    border: 1px solid #AC4167;
+    color: #AC4167;
+    border-radius: 45px 0 45px 0;
+    text-align: center;
+    margin-right: 1em;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button#easybtn {
+    margin-left: 0;
+}
+/* start 30 day styling */
+
+#thirty-day-header {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+
+#thirty-day-content{
+    width: 63%;
+    margin-left: 18.5%;
+    margin-right: 18.5%;
+    margin-top: 12%;
+}
+
+p#thirty-day-call {
+    font-size: 1.4em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+ol {
+    font-size: 1.2em;
+    line-height: 2em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    margin-left: 0em;
+    /* padding-left: 34%; */
+    padding-right: 12%;
+    /* margin-right: -100%; */
+    width: 13em;
+}
+
+
+footer{
+width: 100%;
+position: fixed;
+z-index: 2;
+bottom: 0;
+}
+
+.hidden 
+{position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
+  }
+
+
+
+@media screen and (max-width: 420px) {
+    /* image styles */
+
+#logo {
+    padding-top: .5em;
+    padding-left: 1em;
+    width: 8em;
+}
+
+#astro {
+    width: 20%;
+    position: fixed;
+    z-index: -1;
+    right: 2em;
+    bottom: 2em;
+}
+#foreground {
+    width: 99%;
+    position: fixed;
+    z-index: -2;
+    right: 0;
+    bottom: 0em;
+}
+#background {
+    width: 0;
+    position: fixed;
+    z-index: -3;
+    right: -28em;
+    bottom: -45em;
+}
+
+img#background-alt {
+    display: block;
+    width: 164%;
+    height: 84%;
+    position: fixed;
+    z-index: -6;
+    right: -8em;
+    bottom: -2em;
+}
+
+#insta {
+    float: right;
+    padding-right: 1em;
+    padding-bottom: .8em;
+    color: white;
+    width:2rem;
+    z-index: 3;
+}
+
+/* start regular styling */
+
+main {
+    margin-left: 0;
+}
+
+img#menu {
+    display: inline-block;
+    height: 4em;
+}
+
+#nav-links {
+    float: right;
+    list-style-type: none;
+    margin-right: 0%;;
+    padding-top: 3%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+a#index {
+    margin-right: .5em;
+    padding-right: .5em;
+}
+
+/* start other styles */
+
+
+
+section#maincontent {
+    width: 66%;
+    margin-left: 20%;
+    margin-top: 12%;
+}
+
+h1 {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    display: block;
+    font-size: 1em;
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+h2#promptTxt {
+    height: 4em;
+    margin-top: 1.3em;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+div#mainbtn {
+    margin-top: -4%;
+    margin-left: 21%;
+    margin-right: 30%;
+}
+
+#resetbtn {
+    margin-top: -1%;
+    margin-left: -8%;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btnOutline {
+    display: block;
+    text-decoration: none;
+    background: none;
+    border: 1px solid #AC4167;
+    color: #AC4167;
+    border-radius: 45px 0 45px 0;
+    width: 7em;
+    height: 2.8em;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+
+/* start 30 day styling */
+
+#thirty-day-header {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+
+
+#thirty-day-content{
+        width: 60%;
+        margin-left: 16%;
+        margin-right: 20%;
+        margin-top: 12%;
+}
+
+p#thirty-day-call {
+    font-size: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+ol {
+    font-size: .9em;
+    line-height: 2em;
+    /* margin-top: 1em; */
+    margin-bottom: 10em;
+    padding-left: 24%;
+    padding-right: 0;
+    width: 10em;
+}
+
+footer{
+width: 100%;
+position: fixed;
+z-index: 2;
+bottom: 0;
+}
+
+.hidden 
+{position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
+  }
